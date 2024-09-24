@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ToDo список</title>
+    <link rel="stylesheet" href="./style/theme.css"/>
+</head>
+<body>
+<div class="container" id="app_todo">
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+    <div class="card">
+        <h1>{{ tittle }}</h1>
+        <div class="form-control">
+            <input
+                    type="text"
+                    :placeholder="placeholderString"
+                    v-model="inputValue"
+                    @keydown.enter="addNewNote"
+            />
+        </div>
+        <div class="btn_list">
+            <button class="btn" @click="addNewNote">Добавить</button>
+            <button class="btn danger" @click="removeNotesAll">Удалить все</button>
+        </div>
+        <hr/>
+        <ul class="list" v-if="notes.length !== 0">
+            <li class="list-item" v-for="note in notes" :key="note.id">
+                <label class="custom-checkbox">
+                    <input type="checkbox" @change="itemChecked(note, false)">
+                    <span>{{ note.text }}</span>
+                </label>
+                <button class="btn danger" @click="removeNote(note.id)">x</button>
+            </li>
+            <hr/>
+            <li>
+                <strong>{{ notes.length }} элементов (а)</strong>
+            </li>
+            <hr class="strong"/>
+        </ul>
+        <div v-else>
+            <h2>Добавьте элемент в список</h2>
+        </div>
+        <ul class="list" v-if="notesDone.length !== 0">
+            <li class="list-item" v-for="note in notesDone" :key="note.id">
+                <label class="custom-checkbox">
+                    <input type="checkbox" checked @change="itemChecked(note, true)">
+                    <span style="text-decoration: line-through;">{{ note.text }}</span>
+                </label>
+                <button class="btn danger" @click="removeDone(note.id)">x</button>
+            </li>
+            <hr/>
+            <li>
+                <strong>Выполнено: {{ notesDone.length }}</strong>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="ToDO.js"></script>
+</body>
+</html>

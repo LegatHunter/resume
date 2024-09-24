@@ -1,0 +1,1 @@
+Макет https://www.figma.com/file/6CQsNTNQfgArKkrnQJderx/Personal-Portfolio-Web-Template-(Community)?type=design&node-id=1-487&mode=design&t=LOAtWgEXpGKnnDX6-0

@@ -5,9 +5,9 @@ const App = {
             placeholderString: "Введите название покупки и нажмите Enter",
             inputValue: "",
             notes: [
-                { id: 1, text: "Заметка 1" },
-                { id: 2, text: "Заметка 2" },
-                { id: 3, text: "Заметка 3" }
+                {id: 1, text: "Заметка 1"},
+                {id: 2, text: "Заметка 2"},
+                {id: 3, text: "Заметка 3"}
             ],
             notesDone: [],
             nextId: 4,
@@ -43,8 +43,7 @@ const App = {
             }
         }
     },
-    computed: {
-    }
+    computed: {}
 };
 
 const app = Vue.createApp(App).mount("#app_todo");

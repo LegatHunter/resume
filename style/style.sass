@@ -15,10 +15,13 @@ $gradient: linear-gradient(90deg, #B86ADF 0%, #FF6C63 50%, #FFB147 100%)
   align-items: center
   gap: 8px
   cursor: pointer
-
+[v-cloak]
+  display: none
 *
   box-sizing: border-box
   color: $color_text
+
+
 
 body
   font-family: "IBM Plex Sans", sans-serif
@@ -54,9 +57,6 @@ body
     font-weight: 700
     font-size: 30px
 
-  &__nav
-    margin-bottom: 220px
-
   &__nav ul
     display: flex
     gap: 20px
@@ -71,6 +71,9 @@ body
 
   &__nav a:hover
     font-weight: 700
+
+  &__qr-code img
+    max-width: 200px
 
   &__social-link
     display: flex

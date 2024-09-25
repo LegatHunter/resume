@@ -1,3 +1,7 @@
+[v-cloak] {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   color: #141313;
@@ -36,9 +40,6 @@ body {
   font-weight: 700;
   font-size: 30px;
 }
-.menu__nav {
-  margin-bottom: 220px;
-}
 .menu__nav ul {
   display: flex;
   gap: 20px;
@@ -53,6 +54,9 @@ body {
 }
 .menu__nav a:hover {
   font-weight: 700;
+}
+.menu__qr-code img {
+  max-width: 200px;
 }
 .menu__social-link {
   display: flex;

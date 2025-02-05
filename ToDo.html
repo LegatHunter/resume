@@ -4,16 +4,16 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ToDo список</title>
-    <link rel="stylesheet" href="./style/theme.css"/>
+    <link rel="stylesheet" href="./style/style.css"/>
 </head>
-<body>
-<div class="container" id="app_todo">
+<body class="todo-body">
+<div class="todo-container" id="app_todo" v-cloak>
     <style>
         [v-cloak] {
             display: none;
         }
     </style>
-    <div class="card">
+    <div class="todo-card">
         <h1>{{ tittle }}</h1>
         <div class="form-control">
             <input

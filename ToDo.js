@@ -1,16 +1,12 @@
 const App = {
     data() {
         return {
-            tittle: "Список покупок",
-            placeholderString: "Введите название покупки и нажмите Enter",
+            tittle: "Список заметок",
+            placeholderString: "Введите название заметки и нажмите Enter",
             inputValue: "",
-            notes: [
-                {id: 1, text: "Заметка 1"},
-                {id: 2, text: "Заметка 2"},
-                {id: 3, text: "Заметка 3"}
-            ],
+            notes: [],
             notesDone: [],
-            nextId: 4,
+            nextId: 1,
         };
     },
     methods: {
@@ -22,16 +18,20 @@ const App = {
                 text: this.inputValue,
             });
             this.inputValue = "";
+            this.saveToLocalStorage();
         },
         removeNote(id) {
             this.notes = this.notes.filter(note => note.id !== id);
+            this.saveToLocalStorage();
         },
         removeDone(id) {
             this.notesDone = this.notesDone.filter(note => note.id !== id);
+            this.saveToLocalStorage();
         },
         removeNotesAll() {
             this.notes = [];
             this.notesDone = [];
+            this.saveToLocalStorage();
         },
         itemChecked(note, isDone) {
             if (isDone) {
@@ -41,9 +41,25 @@ const App = {
                 this.notes = this.notes.filter(n => n.id !== note.id);
                 this.notesDone.push(note);
             }
+            this.saveToLocalStorage();
+        },
+        saveToLocalStorage() {
+            localStorage.setItem('notes', JSON.stringify(this.notes));
+            localStorage.setItem('notesDone', JSON.stringify(this.notesDone));
+            localStorage.setItem('nextId', this.nextId);
+        },
+        loadFromLocalStorage() {
+            const savedNotes = JSON.parse(localStorage.getItem('notes')) || [];
+            const savedNotesDone = JSON.parse(localStorage.getItem('notesDone')) || [];
+            const savedNextId = JSON.parse(localStorage.getItem('nextId')) || 4;
+            this.notes = savedNotes;
+            this.notesDone = savedNotesDone;
+            this.nextId = savedNextId;
         }
     },
-    computed: {}
-};
+    mounted() {
+        this.loadFromLocalStorage();
+    }
+}
 
 const app = Vue.createApp(App).mount("#app_todo");

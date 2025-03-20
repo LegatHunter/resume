@@ -1,0 +1,22 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Макет https://www.figma.com/file/6CQsNTNQfgArKkrnQJderx/Personal-Portfolio-Web-Template-(Community)?type=design&node-id=1-487&mode=design&t=LOAtWgEXpGKnnDX6-0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LegatHunter/resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LegatHunter/resume/issues"
+  },
+  "homepage": "https://github.com/LegatHunter/resume#readme",
+  "devDependencies": {
+    "@vue/cli-service": "^5.0.8"
+  }
+}

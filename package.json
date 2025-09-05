@@ -1,25 +1,33 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "description": "Макет https://www.figma.com/file/6CQsNTNQfgArKkrnQJderx/Personal-Portfolio-Web-Template-(Community)?type=design&node-id=1-487&mode=design&t=LOAtWgEXpGKnnDX6-0",
-  "main": "index.js",
+  "name": "resume_2.0",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LegatHunter/resume.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LegatHunter/resume/issues"
-  },
-  "homepage": "https://github.com/LegatHunter/resume#readme",
-  "devDependencies": {
-    "@vue/cli-service": "^5.0.8"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "vue-template-compiler": "^2.7.16"
+    "normalize.css": "^8.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.7.0",
+    "reset-css": "^5.0.2",
+    "sass": "^1.86.2",
+    "scss-reset": "^1.4.6",
+    "styled-components": "^6.1.17"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "vite": "^6.2.0"
   }
 }

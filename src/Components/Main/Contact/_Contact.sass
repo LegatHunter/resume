@@ -1,0 +1,98 @@
+.contact
+  display: flex
+  justify-content: space-between
+  align-items: center
+  gap: 80px
+  margin-bottom: 100px
+
+  &__info
+    & h1
+      font-weight: 700
+      font-size: 48px
+      text-transform: uppercase
+      margin-bottom: 30px
+      line-height: 56px
+
+    & p
+      font-size: 16px
+      line-height: 24px
+      font-weight: 400
+      margin-bottom: 94px
+
+    & h3
+      font-size: 32px
+      font-weight: 700
+      margin-bottom: 20px
+
+    & h4
+      font-size: 32px
+      font-weight: 700
+      margin-bottom: 80px
+
+    &_link
+      display: flex
+      gap: 24px
+      text-transform: uppercase
+      line-height: 24px
+      font-size: 16px
+      font-weight: 500
+
+  &__form
+    background: $gradient
+    padding: 64px 85px
+
+    & h2
+      font-size: 40px
+      font-weight: 700
+      color: white
+      line-height: 48px
+      text-transform: uppercase
+      margin-bottom: 50px
+
+    &_ne
+      display: flex
+      gap: 45px
+      margin-bottom: 56px
+
+      & input
+        border: none
+        border-bottom: 1.5px solid white
+        background: transparent
+        height: 34px
+        width: 280px
+        color: white
+
+        &::placeholder
+          color: white
+          opacity: 80%
+          font-size: 16px
+          font-weight: 500
+          line-height: 24px
+
+        &:focus
+          outline: none
+          color: white
+
+    &_textarea
+      border: none
+      border-bottom: 1.5px solid white
+      background: transparent
+      resize: none
+      max-width: 605px
+      margin-bottom: 16px
+      width: 100%
+      color: white
+
+      &::placeholder
+        color: white
+        opacity: 80%
+        font-size: 16px
+        font-weight: 500
+        line-height: 24px
+
+      &:focus
+        outline: none
+        color: white
+
+    &_btn
+      +button_black

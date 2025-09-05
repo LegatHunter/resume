@@ -1,0 +1,100 @@
+.home
+  height: 100vh
+  //max-width: 1635px
+  display: flex
+  align-items: center
+  gap: 100px
+  justify-content: center
+
+  &__info
+    position: relative
+
+  &__info svg
+    position: absolute
+    z-index: -1
+    left: -50px
+    top: -40px
+
+  &__info h1
+    font-size: 80px
+    line-height: 50px
+    text-transform: uppercase
+    margin-bottom: 24px
+
+  &__info h1 span
+    font-size: 60px
+    font-weight: 700
+
+  &__info h2
+    font-weight: 700
+    font-style: italic
+    font-size: 26px
+    margin-bottom: 48px
+
+  &__info h2 span
+    font-style: normal
+
+  &__info a
+    color: #FFF
+    padding: 16px 40px
+    background-color: $color_background
+    font-size: 18px
+    font-weight: 500
+    transition: box-shadow 0.3s
+    &:hover
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7)
+
+  &__img
+    position: relative
+
+    &_1
+      position: absolute
+      top: 80px
+      left: -80px
+      z-index: -1
+
+    &_2
+      position: absolute
+      right: -80px
+      top: 54px
+
+    &_3
+      position: absolute
+      left: -95px
+      top: 253px
+
+    &_4
+      position: absolute
+      top: 437px
+      left: 150px
+      z-index: -1
+
+    &_stars
+      position: absolute
+      top: 0
+      left: -90px
+
+    &_quadro
+      position: absolute
+      top: 540px
+      right: 20px
+
+  &__contacts
+    margin-top: 64px
+    display: flex
+    gap: 48px
+    font-size: 18px
+    font-weight: 700
+    font-style: italic
+
+    &_phone
+      display: flex
+      gap: 12px
+      flex-wrap: wrap
+      align-items: center
+
+    &_email
+      display: flex
+      gap: 12px
+      flex-wrap: wrap
+      align-items: center

@@ -1,0 +1,36 @@
+.work
+  margin-bottom: 100px
+
+  & h1
+    font-weight: 700
+    font-size: 48px
+    text-transform: uppercase
+    margin-bottom: 48px
+
+  &__welcome
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__content
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 50px
+    margin-bottom: 48px
+    &_el
+      display: flex
+      gap: 30px
+
+      &-info
+        max-width: 200px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+
+    & h3
+      font-size: 30px
+      font-weight: bold
+      line-height: 40px
+
+  &_btn
+    +button_black

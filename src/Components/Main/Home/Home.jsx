@@ -52,7 +52,7 @@ export default function Home() {
         <h2>
           Frontend <span>разработчик из</span> Архангельска
         </h2>
-        <a className="home__info_btn" href={nik.urlTelegram} target='_blank'>
+        <a className="home__info_btn" href={nik.urlTelegram} target='_blank' rel='noopener noreferrer'>
           Давай поболтаем
         </a>
         <div className='home__contacts'>
@@ -68,7 +68,7 @@ export default function Home() {
       </div>
       <div className='home__img'>
         <img className='home__img_2' src={vector2} alt='2' />
-        <img className='home__img_3' src={vector3} alt='' />
+        <img className='home__img_3' src={vector3} alt='Декоративный элемент' />
         <img className='home__img_me' src={nikPhoto} alt='me' />
         <img className='home__img_1' src={vector1} alt='1' />
         <img className='home__img_4' src={vector4} alt='4' />

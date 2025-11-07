@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import btnArrow from "../../../img/btn_arrow.png"
 import toDo from "../../../img/To-Do.png"
 import numberGame from "../../../img/game_number.png"
@@ -13,12 +12,35 @@ export default function Works() {
       <div className='work__welcome'>
         <div className='work__content'>
           <a
-            href='/Page/To-Do/index.html'
+            href='/Pages/To-Do/To-Do.html'
             target='_blank'
             rel='noopener noreferrer'>
             <div className='work__content_el'>
               <div className='work__content_el-info'>
                 <h3>Список покупок To-Do (Vue3)</h3>
+                <svg
+                  width='39'
+                  height='40'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'>
+                  <path
+                    d='M13 .8v5.12h16.87L.2 35.592l3.61 3.61L33.48 9.53V26.4h5.12V.8H13Z'
+                    fill='#141313'
+                  />
+                </svg>
+              </div>
+              <div className='work__content_el-img'>
+                <img src={toDo} alt='to-do' width='315' height='248' />
+              </div>
+            </div>
+          </a>
+          <a
+            href='/Pages/ToDo/index.html'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <div className='work__content_el'>
+              <div className='work__content_el-info'>
+                <h3>Список покупок To-Do (React)</h3>
                 <svg
                   width='39'
                   height='40'

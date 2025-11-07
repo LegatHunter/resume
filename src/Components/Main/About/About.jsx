@@ -15,7 +15,7 @@ export default function About() {
       <div className='about__info'>
         <div className='about__pers'>
           <div className='about__pers_img'>
-            <img src={aboutFull} alt='' />
+            <img src={aboutFull} alt='Никита Пребышевский' />
           </div>
           <h2>
             <span className='about__gradient'>{nik.nickName}</span>
@@ -24,7 +24,7 @@ export default function About() {
             Frontend <span>разработчик из</span> Архангельска
           </h4>
           <div className='about__pers_a'>
-            <a href='person.urlMailto' target='_blank'>
+            <a href={nik.urlMailto} target='_blank' rel='noopener noreferrer'>
               Написать мне
             </a>
             <img src={email} alt='email' />
@@ -35,13 +35,13 @@ export default function About() {
             <div className='about__contact_b'>
               <div className='about__contact_bi'>
                 <div>
-                  <img src={phone} alt='' />
+                  <img src={phone} alt='Телефон' />
                 </div>
                 <h4>{nik.telephone}</h4>
               </div>
               <div className='about__contact_bi'>
                 <div>
-                  <img src={email} alt='' />
+                  <img src={email} alt='Email' />
                 </div>
                 <h4>{nik.email}</h4>
               </div>
@@ -49,13 +49,13 @@ export default function About() {
             <div className='about__contact_b'>
               <div className='about__contact_bi'>
                 <div>
-                  <img src={iconPers} alt='' />
+                  <img src={iconPers} alt='Возраст' />
                 </div>
                 <h4>{nik.age} года</h4>
               </div>
               <div className='about__contact_bi'>
                 <div>
-                  <img src={iconMap} alt='' />
+                  <img src={iconMap} alt='Местоположение' />
                 </div>
                 <h4>{nik.address}</h4>
               </div>
@@ -98,7 +98,7 @@ export default function About() {
           </div>
           <div className='about__quote'>
             <div className='about__quote_img'>
-              <img src={quote} alt='' />
+              <img src={quote} alt='Цитата' />
             </div>
             <div className='about__quote_text'>
               <p>
@@ -117,7 +117,7 @@ export default function About() {
             Привет! Меня зовут {nik.firstName} {nik.lastName}.
             <br />Я веб-разработчик, и я очень увлечен и предан своей работе.
           </p>
-          <a href='./Resume.docx' target='_blank'>
+          <a href='./Resume.docx' target='_blank' rel='noopener noreferrer'>
             Скачать моё резюме
           </a>
         </div>

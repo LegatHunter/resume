@@ -1,12 +1,89 @@
-# React + Vite
+# Resume - Портфолио Frontend разработчика
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Персональное портфолио Никиты Пребышевского - Frontend разработчика из Архангельска.
 
-Currently, two official plugins are available:
+## 🚀 Технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** - библиотека для создания пользовательских интерфейсов
+- **Vite** - быстрый инструмент сборки
+- **SASS** - препроцессор CSS
+- **React Router DOM** - маршрутизация (зарезервировано для будущего использования)
 
-## Expanding the ESLint configuration
+## 📦 Установка
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Клонируйте репозиторий:
+```bash
+git clone <repository-url>
+cd resume
+```
+
+2. Установите зависимости:
+```bash
+npm install
+```
+
+## 🛠️ Разработка
+
+Запуск проекта в режиме разработки:
+```bash
+npm run dev
+```
+
+Проект будет доступен по адресу `http://localhost:5173`
+
+## 🏗️ Сборка
+
+Создание production сборки:
+```bash
+npm run build
+```
+
+Собранные файлы будут в папке `dist`
+
+## 🔍 Линтинг
+
+Проверка кода с помощью ESLint:
+```bash
+npm run lint
+```
+
+## 📁 Структура проекта
+
+```
+resume/
+├── src/                  # Исходный код
+│   ├── Components/       # React компоненты
+│   │   ├── Menu/         # Меню навигации
+│   │   ├── Aside/        # Боковая панель
+│   │   └── Main/         # Основной контент
+│   │       ├── Home/     # Главная страница
+│   │       ├── About/    # О себе
+│   │       ├── Works/    # Портфолио работ
+│   │       └── Contact/  # Контакты
+│   ├── img/              # Изображения
+│   ├── data.js           # Данные профиля
+│   ├── App.jsx           # Главный компонент
+│   └── main.jsx          # Точка входа
+├── public/               # Публичные файлы
+│   └── Pages/            # Статические страницы проектов
+├── dist/                 # Собранные файлы (не коммитится)
+└── package.json          # Зависимости и скрипты
+```
+
+## ✨ Особенности
+
+- Адаптивный дизайн
+- Плавная прокрутка по якорным ссылкам
+- Форма обратной связи с валидацией
+- SEO оптимизация
+- Быстрая загрузка благодаря Vite
+
+## 📝 Лицензия
+
+Проект создан для личного использования.
+
+## 📧 Контакты
+
+- **Email**: i@legathunter.ru
+- **Telegram**: [@legathunter](https://t.me/legathunter)
+- **GitHub**: [LegatHunter](https://github.com/LegatHunter)

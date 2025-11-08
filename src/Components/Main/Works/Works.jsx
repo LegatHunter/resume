@@ -4,6 +4,7 @@ import numberGame from "../../../img/game_number.png"
 import pigGame from "../../../img/Piggy.webp"
 import bank from "../../../img/Bank.png"
 import cardio from "../../../img/cardio.png"
+import crypto from "../../../img/Crypto.png"
 
 export default function Works() {
   return (
@@ -151,6 +152,29 @@ export default function Works() {
               </div>
               <div className='work__content_el-img'>
                 <img src={cardio} alt='cardio' width='315' height='248' />
+              </div>
+            </div>
+          </a>
+          <a
+            href='/Pages/Crypto/index.html'
+            target='_blank'
+            rel='noopener noreferrer'>
+            <div className='work__content_el'>
+              <div className='work__content_el-info'>
+                <h3>Работа с криптовалютой (React + AntDesign)</h3>
+                <svg
+                  width='39'
+                  height='40'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'>
+                  <path
+                    d='M13 .8v5.12h16.87L.2 35.592l3.61 3.61L33.48 9.53V26.4h5.12V.8H13Z'
+                    fill='#141313'
+                  />
+                </svg>
+              </div>
+              <div className='work__content_el-img'>
+                <img src={crypto} alt='crypto' width='315' height='248' />
               </div>
             </div>
           </a>
